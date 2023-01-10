@@ -17,15 +17,15 @@ public class TC_3_TO_13 extends BaseClass {
 	public void test3() throws Exception {
 		driver.findElement(By.xpath("//span[text()='PIM']")).click();
 		driver.findElement(By.xpath("//i[@class='oxd-icon bi-plus oxd-button-icon']")).click();
-		driver.findElement(By.name("firstName")).sendKeys("siva");
-		driver.findElement(By.name("middleName")).sendKeys("Kumar");
-		driver.findElement(By.name("lastName")).sendKeys("S");
+		driver.findElement(By.name("firstName")).sendKeys("kutraleeswaran");
+		driver.findElement(By.name("middleName")).sendKeys("sekar");
+		driver.findElement(By.name("lastName")).sendKeys("C");
 		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[5]")).clear();
-		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[5]")).sendKeys("7550");
+		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[5]")).sendKeys("9504");
 		driver.findElement(By.xpath("//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")).click();
-		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[7]")).sendKeys("sivaKumar");
-		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[10]")).sendKeys("Senthil2001#");
-		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[11]")).sendKeys("Senthil2001#");
+		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[7]")).sendKeys("kutraleeswaran");
+		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[10]")).sendKeys("India@11");
+		driver.findElement(By.xpath("(//input[@class='oxd-input oxd-input--active']//following::input)[11]")).sendKeys("India@11");
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		System.out.println("TC_3:Successfully completed");
 	    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -35,7 +35,7 @@ public class TC_3_TO_13 extends BaseClass {
 	    WebElement list=driver.findElement(By.xpath("//div[@role='tablist']"));
 	    String main=list.getText();
 	    System.out.println(main);
-	    System.out.println("TC_4:Successfully completed");
+	    System.out.println("TC_4 had been completed Successfully");
 	    
 	    
 	    //TC_5(Personal  Detail)
@@ -94,7 +94,7 @@ public class TC_3_TO_13 extends BaseClass {
 	     bloodTypes.keyRelease(KeyEvent.VK_ENTER);
 			
 		driver.findElement(By.xpath("(//div[@class='oxd-form-actions']//following::button)[2]")).click();
-		System.out.println("TC_5:Successfully Completed");
+		System.out.println("TC_5 had been completed Successfully");
 		Thread.sleep(2000);
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
 		jse.executeScript("scroll(0,-250);");
@@ -128,7 +128,7 @@ public class TC_3_TO_13 extends BaseClass {
 		driver.findElement(By.xpath("(//div[@class='oxd-grid-item oxd-grid-item--gutters']//following::input)[9]")).sendKeys("siva@gmail.com");
 		driver.findElement(By.xpath("(//div[@class='oxd-grid-item oxd-grid-item--gutters']//following::input)[10]")).sendKeys("selvie@gmail.com");
 	    driver.findElement(By.xpath("//button[@type='submit']")).click();
-	    System.out.println("TC_6 Successfully Completed");
+	    System.out.println("TC_6  had been completed Successfully");
 	    
 	    
 	    //TC_7(Emergency contact)
@@ -141,7 +141,7 @@ public class TC_3_TO_13 extends BaseClass {
 	  	driver.findElement(By.xpath("(//form[@class='oxd-form']//following::input)[4]")).sendKeys("8967452310");
 	  	driver.findElement(By.xpath("(//form[@class='oxd-form']//following::input)[5]")).sendKeys("8905672341");
 	    driver.findElement(By.xpath("//button[@type='submit']")).click();
-	    System.out.println("TC_7 Successfully Completed");
+	    System.out.println("TC_7 had been completed Successfully");
 	    
 	    
 //	    //TC_8(Dependency)
@@ -196,7 +196,7 @@ public class TC_3_TO_13 extends BaseClass {
 	  Thread.sleep(2000);
 	  driver.findElement(By.xpath("(//div[@class='oxd-grid-item oxd-grid-item--gutters']//following::input)[6]")).sendKeys("10000");
 	  driver.findElement(By.xpath("//button[@type='submit']")).click();
-	  System.out.println("TC_12SuccessFully Completed");
+	  System.out.println("TC_12 had been completed Successfully");
 		
 		//TC_13(TAX)
 	    
@@ -268,7 +268,7 @@ public class TC_3_TO_13 extends BaseClass {
 			        WS.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-		System.out.println("TC_13 Successfully Completed");
+		System.out.println("TC_13 had been completed Successfully");
 
 	    
 		
@@ -315,7 +315,7 @@ public class TC_3_TO_13 extends BaseClass {
 	    rb.keyRelease(KeyEvent.VK_ENTER);
 	    
 	    driver.findElement(By.xpath("//button[@type='submit']")).click();
-	    System.out.println("TC_9 Successfully Completed");
+	    System.out.println("TC_9 had been completed Successfully");
 	    
 	   
 	  
@@ -331,7 +331,7 @@ public class TC_3_TO_13 extends BaseClass {
 		driver.findElement(By.xpath("//textarea[@placeholder='Type here']")).sendKeys("Due to contract not renewed he as been terminated");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//button[@type='submit'])[2]")).click();
-	    System.out.println("TC_10 Successfully Completed");
+	    System.out.println("TC_10 had been completed Successfully");
 	    
 //	    //TC_11(Active)
 	    Thread.sleep(2000);
